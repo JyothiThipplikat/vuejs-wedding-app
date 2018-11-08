@@ -6,14 +6,6 @@
         <ul>
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
-<!--         <div class="form-group">
-          <label>Wedding Date:</label> 
-          <input type="text" class="form-control" v-model="date" min= Date.now>
-        </div>
-        <div class="form-group">
-          <label>Budget:</label>
-          <input type="text" class="form-control" v-model="budget">
-        </div> -->
         <tr>
         <div class="form-group">
           <label for="Categories">Select Category</label>
@@ -42,8 +34,6 @@ export default {
   data: function() {
     return {
       tags: [],
-      // date: "",
-      // budget: "",
       percentage: "",
       tagId: 0,
       errors: []

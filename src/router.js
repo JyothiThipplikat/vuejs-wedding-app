@@ -25,7 +25,7 @@ export default new Router({
     { path: "/survey", name: "survey", component: Survey},
     { path: "/customerprofile", name: "customerprofile", component: CustomerProfile},
 
-    { path: "/vendorsindex", name: "VendorsIndex", component: VendorsIndex},
-    { path: "/vendorsshow", name: "VendorsShow", component: VendorsShow},
+    { path: "/vendors", name: "VendorsIndex", component: VendorsIndex},
+    { path: "/vendors/:id", name: "VendorsShow", component: VendorsShow},
   ]
 });

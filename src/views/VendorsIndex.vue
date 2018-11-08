@@ -13,20 +13,19 @@
             <div class="row product_grid">
                 <div v-for="vendor in vendors" class="col-md-4 product_item">
                     <div class="product-thumb">
-                        <img src=""  alt="" class="img-responsive">
+                        <img v-bind:src="vendor.primary_image[0].url" alt="" class="img-responsive">
                         <div class="product-thumb-overlay">
                             <p>
-                                <a href="#"><i class="ion-bag"></i> Add to cart</a>
-                                <a href="#"><i class="ion-eye"></i> Add to wishlist</a>
-                                <a href="#"><i class="ion-refresh"></i> Add to compare</a>
+                              <a href="#"><i class="ion-bag"></i> Add to cart</a>
+                              <a href="#"><i class="ion-eye"></i> Add to wishlist</a>
+                              <a href="#"><i class="ion-refresh"></i> Add to compare</a>
                             </p>
                         </div>
                     </div><!--end product thumb-->
                     <div class="product-desc">
-                        <h3><a href="#">{{vendor.company_name}}</a></h3>
-                       <!--  <p>{{vendor.price}}</p> -->
-                        <a href="/#/vendorshow/ class="btn theme-btn-default btn-lg">View Detail</a>
-                    </div><!--product desc end-->
+                      <h3> {{ vendor.company_name }} </h3>
+                      <router-link class="btn theme-btn-default btn-lg" v-bind:to="'/vendors/' + vendor.id">View Detail</router-link>
+                    </div><!--product desc end-->    
                 </div><!--product item end-->
             <div class="space-40"></div>
             <div class="clearfix">
@@ -62,9 +61,9 @@ export default {
   created: function() {
      axios
     .get("http://localhost:3000/api/vendors")
-    .then(response => {
+    .then(function(response) {
       this.vendors = response.data;
-    });
+    }.bind(this));
   },
   methods: {},
   computed: {}

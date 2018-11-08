@@ -148,8 +148,8 @@
         <router-link to="/">Home</router-link> |
         <router-link to="/logout">Logout</router-link> |
         <router-link to="/survey">Survey</router-link> |
-        <router-link to="/vendorsindex">All Vendors</router-link> |
-        <router-link to="/vendorsshow">One Vendor</router-link>
+        <router-link to="/vendors">All Vendors</router-link> |
+        <router-link to="/vendorsshow/:id">One Vendor</router-link>
     <router-view/>
 
     <div style="height:100px"></div>

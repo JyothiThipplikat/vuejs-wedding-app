@@ -28,6 +28,14 @@
                       <div class="form-group">
                         <input type="password" class="form-control" v-model="passwordConfirmation" placeholder="Repeat password..">
                       </div>
+                      <label> Enter your wedding information:</label>
+                      <hr>
+                      <div class="form-group">
+                        <input type="text" class="form-control" v-model="date" min= Date.now placeholder="Wedding Date">
+                      </div>
+                      <div class="form-group">
+                       <input type="text" class="form-control" v-model="budget" placeholder="Total Budget">
+                      </div> 
                       <div class="col-md-12 text-right">
                         <button type="submit" class="btn theme-btn-color">Sign up</button>
                       </div>
@@ -54,6 +62,8 @@ export default {
       email: "",
       password: "",
       passwordConfirmation: "",
+      date: "",
+      budget: "",
       errors: []
     };
   },
@@ -67,7 +77,7 @@ export default {
       axios
         .post("http://localhost:3000/api/users", params)
         .then(response => {
-          this.$router.push("/login");
+          this.$router.push("/survey/");
         })
         .catch(error => {
           this.errors = error.response.data.errors;
