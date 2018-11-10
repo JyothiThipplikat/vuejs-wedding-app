@@ -13,7 +13,7 @@
             <div class="row product_grid">
                 <div v-for="vendor in vendors" class="col-md-4 product_item">
                     <div class="product-thumb">
-                        <img v-bind:src="vendor.primary_image[0].url" alt="" class="img-responsive">
+                        <img v-bind:src="vendor.primary_image_url" alt="" class="img-responsive">
                         <div class="product-thumb-overlay">
                             <p>
                               <a href="#"><i class="ion-bag"></i> Add to cart</a>
