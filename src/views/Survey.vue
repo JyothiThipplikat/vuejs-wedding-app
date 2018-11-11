@@ -1,5 +1,7 @@
 <template>
-  <div class="tags-index">
+  
+ 
+   <!-- <div class="tags-index">
     <div class="container">
       <form v-on:submit.prevent="submit()">
         <h1>Begin your wedding planning!</h1>
@@ -21,10 +23,11 @@
         <input type="submit" class="btn btn-primary" value="Submit">
       </form>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <style>
+
 </style>
 
 <script>
@@ -49,8 +52,6 @@ export default {
   methods: {
     submit: function() {
       var params = {
-        // date: this.date,
-        // budget: this.budget,
         percentage: this.percentage,
         tag_id: this.tagId
       };
@@ -79,4 +80,6 @@ export default {
   },
   computed: {}
 };
+
 </script>
+    

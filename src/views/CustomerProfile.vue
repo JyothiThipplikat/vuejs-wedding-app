@@ -12,14 +12,14 @@
 
         <div class="container">
           <div class="row">
-              <div class="col-lg-8">
+              <div class="col-lg-12">
               <div v-for="priority in priorities">
-              <div v-for="vendor in priority.vendors" class="row product_grid">
-              <div class="col-md-4 product_item">
+              <div class="row product_grid">
+              <div v-for="vendor in priority.vendors" class="col-md-4 product_item">
                   <div class="product-thumb">
                       <img v-bind:src="vendor.primary_image_url" alt="" class="img-responsive">
                       <div class="product-thumb-overlay">
-                              <!--  <a href="/#/addtocart"><i class="ion-bag"></i> Add to cart</a> -->
+                              <!--  <a href="/#/cartindex"><i class="ion-bag"></i> Add to cart</a> -->
                           </p>
                       </div>
                   </div><!--end product thumb-->

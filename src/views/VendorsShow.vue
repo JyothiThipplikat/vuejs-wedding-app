@@ -1,8 +1,6 @@
 <template>
   <div class="vendors-show">
-    
-
-    <section id="content-region-3" class="padding-40 page-tree-bg page-tree-bg2">
+     <section id="content-region-3" class="padding-40 page-tree-bg page-tree-bg2">
       <div class="container">
           <h3 class="page-tree-text">
               Shop product
@@ -14,6 +12,7 @@
      <div class="container">
             <div class="row">
                 <div class="col-md-6 ml-auto">
+
                      <div id="js-grid-slider-thumbnail" class="cbp ">
                         <div class="cbp-item">
                             <div class="cbp-caption">
@@ -22,7 +21,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cbp-item">
+                       <!--  <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="assets/img/shop/d2.jpg" alt="">
@@ -35,18 +34,18 @@
                                     <img src="assets/img/shop/d3.jpg" alt="">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div id="js-pagination-slider">
                         <div class="cbp-pagination-item cbp-pagination-active">
-                            <img src="assets/img/shop/d1.jpg" alt="">
+                            <img v-bind:src="vendor.images" alt="">
                         </div>
-                        <div class="cbp-pagination-item">
+                        <!-- <div class="cbp-pagination-item">
                             <img src="assets/img/shop/d2.jpg" alt="">
                         </div>
                         <div class="cbp-pagination-item">
                             <img src="assets/img/shop/d3.jpg" alt="">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -55,9 +54,12 @@
                         <form class="cart">
                             <div class="add-to-cart-table">
                                 <div class="quantity">
-                                    <input type="number" step="1" min="1" name="quantity" value="1" title="Qty" class="input-text qty text">
+                                    <input type="number" step="1" min ="1" max="1" name="quantity" value="1" title="Qty" class="input-text qty text">
                                 </div>
-                                <button type="button" class="button">Add to cart</button>
+                                  <li class="cart-footer d-flex flex-column pt-4">
+                                    <button @click="addCart()" class="btn-dark btn btn-block">Add to cart</button>
+                                    <a href="/#/cartindex" class="theme-btn-color btn btn-block">View cart</a>
+                                  </li>
                             </div>
                         </form>
                         <div class="space-30"></div>
@@ -129,7 +131,7 @@
                                         <span class="time-review">12 Days Ago</span>
 
                                         <p>
-                                           {{ vendor.images }}
+                                          
                                         </p>
                                     </div>
                                 </li><!--review end-->
@@ -220,7 +222,11 @@ export default {
        this.vendor = response.data;
     });
   },
-  methods: {},
+  methods: {
+    addCart: function() {
+      this.vendors.push(item);
+    }
+  },
   computed: {}
 };
 

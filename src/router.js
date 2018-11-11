@@ -10,7 +10,7 @@ import Survey from "./views/Survey.vue";
 
 import CustomerProfile from "./views/CustomerProfile.vue";
 
-import AddToCart from "./views/AddToCart.vue";
+import CartIndex from "./views/CartIndex.vue";
 
 import VendorsIndex from "./views/VendorsIndex.vue";
 import VendorsShow from "./views/VendorsShow.vue";
@@ -27,7 +27,7 @@ export default new Router({
 
     { path: "/survey", name: "survey", component: Survey},
     { path: "/customerprofile", name: "customerprofile", component: CustomerProfile},
-    { path: "/addtocart", name: "addtocart", component: AddToCart},
+    { path: "/cartindex", name: "addtocart", component: CartIndex},
 
     { path: "/vendors", name: "VendorsIndex", component: VendorsIndex},
     { path: "/vendors/:id", name: "VendorsShow", component: VendorsShow},

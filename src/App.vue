@@ -19,8 +19,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo-dark.png" class="img-fluid logo-dark" alt="">
-                    <img src="assets/img/logo-white.png" class="img-fluid logo-light" alt="">
+                    <h2><span>STREAM</span>LINE</b></h2>
                 </a>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -149,91 +148,27 @@
         <router-link to="/logout">Logout</router-link> |
         <router-link to="/survey">Survey</router-link> |
         <router-link to="/vendors">All Vendors</router-link> |
-        <router-link to="/vendorsshow/:id">One Vendor</router-link>
     <router-view/>
 
     <div style="height:100px"></div>
-    <!--footer-->
-    <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 margin-btm-20">
-                    <div class="footer-col">
-                        <h3>Bizwrap</h3>
-                        <p>
-                            aliqua.adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua.adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-                        </p>
-                    </div>
-                    <div class="space-20"></div>
-                    <div class="footer-col">
-                        <h3>contact info</h3>
-                        <p><i class="ion-home"></i> 8668 Gregory Lane DesPlaines, IL 60016</p>
-                        <p><i class="ion-iphone"></i> 8474714238</p>
-                        <p><i class="ion-email"></i> t.jyothi91@yahoo.com</p>
-                    </div>
-                    <div class="space-20"></div>
-                    <div class="footer-col">
-                        <h3>Follow us</h3>
-                        <ul class=" list-inline social-btn">
-                            <li class="list-inline-item"><a href="#"><i class="ion-social-facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like On Facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="ion-social-twitter" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="ion-social-googleplus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On googleplus"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="ion-social-pinterest" data-toggle="tooltip" data-placement="top" title="" data-original-title="pinterest"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="ion-social-skype" data-toggle="tooltip" data-placement="top" title="" data-original-title="skype"></i></a></li>
-                        </ul>
-                    </div><!--footer social col-->
-                </div><!--col-4 end-->
-                <div class="col-md-3 margin-btm-20">
-                    <div class="footer-col">
-                        <h3>Latest post</h3>
-                        <ul class="post-list list-unstyled">
-                            <li><a href="#" class="hover-color">Blog post with image</a></li>
-                            <li><a href="#" class="hover-color">lorem ipsum dollor sit amet</a></li>
-                            <li><a href="#" class="hover-color">Blog post with audio</a></li>
-                            <li><a href="#" class="hover-color">lorem ipsum dollor sit amet</a></li>
-                            <li><a href="#" class="hover-color">Blog post with quote</a></li>
-                        </ul>
-                    </div>
-                </div><!--latest post col end-->
-                <div class="col-md-5">
-                    <div class="footer-col">
-                        <h3>Get in touch</h3>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Name...">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Email...">
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="Subject...">
-                                </div>
-                                <div class="col-md-12">
-                                    <textarea class="form-control" placeholder="Message..." rows="7"></textarea>
-                                </div>
-                                <div class="col-md-12 text-right">
-                                    <button type="submit" class="btn btn-lg btn-white">Send message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div><!--get in touch col end-->
-            </div><!--footer main row end-->  
-            <div class="space-70"></div>
-            <div class="row">
-                <div class="col-md-12 text-center footer-bottom">
-                    <a href="index.html"> <img src="assets/img/logo-white.png" alt=""></a>
-                    <div class="space-20"></div>
-                    <span>&copy;2017. All right reserved. Design by design_mylife</span>
-                </div>
-            </div><!--footer copyright row end-->
-        </div><!--container-->
-    </div><!--footer main end-->
+   
+    <div class="cta-bg">
+            <div class="container text-center">
+                <h3>Making weddings simple to plan
+                   <!--  <a href="#" class="btn btn-lg btn-white btn-radius">Purchase Now</a> -->
+                </h3>
+            </div>
+        </div>
+        <!--footer-->
 
   </div>
 </template>
 
 <style>
-
+ h2 {
+color: black; 
+}
+span{
+color: #32D2BA;
+}
 </style>
