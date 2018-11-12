@@ -8,12 +8,14 @@
     <title>vuejs-wedding-app</title>
 
     <!--plugins-->
-    <link href="assets/css/plugins/plugins.css" rel="stylesheet">
-    <!--Custom css-->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <link data-require="jqueryui@*" data-semver="1.10.0" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/css/smoothness/jquery-ui-1.10.0.custom.min.css" />
+    <link href="./assets/css/plugins/plugins.css" rel="stylesheet">
+    <!--cube portfolio-->
+    <link href="./assets/cubeportfolio/css/cubeportfolio.min.css" rel='stylesheet'>
   
+    <!--Custom css-->
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+
 
   </head>
   <body>
@@ -28,7 +30,45 @@
     <!-- jQuery plugins. -->
     <script src="assets/js/plugins/plugins.js"></script>
     <script src="assets/js/app.js"></script>
-  
+    
+    <!-- Images Cube Portfolio -->
+    <script src="assets/cubeportfolio/js/jquery.cubeportfolio.min.js"></script> 
+    <script>
+        (function ($, window, document, undefined) {
+            'use strict';
+
+            // init cubeportfolio
+            $('#js-grid-slider-thumbnail').cubeportfolio({
+                layoutMode: 'slider',
+                drag: true,
+                auto: false,
+                autoTimeout: 5000,
+                autoPauseOnHover: true,
+                showNavigation: false,
+                showPagination: false,
+                rewindNav: true,
+                scrollByPage: true,
+                gridAdjustment: 'responsive',
+                mediaQueries: [{
+                        width: 0,
+                        cols: 1
+                    }],
+                gapHorizontal: 0,
+                gapVertical: 0,
+                caption: '',
+                displayType: 'fadeIn',
+                displayTypeSpeed: 400,
+                plugins: {
+                    slider: {
+                        pagination: '#js-pagination-slider',
+                        paginationClass: 'cbp-pagination-active'
+                    }
+                }
+            });
+        })(jQuery, window, document);
+    </script>
+
+   
   
   </body>
 </html>

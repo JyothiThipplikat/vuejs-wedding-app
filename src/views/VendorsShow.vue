@@ -13,11 +13,11 @@
             <div class="row">
                 <div class="col-md-6 ml-auto">
 
-                     <div id="js-grid-slider-thumbnail" class="cbp ">
+                     <div v-for="vendor in vendors" id="js-grid-slider-thumbnail" class="cbp ">
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <img v-bind:src="vendor.images" alt="">
+                                    <img v-bind:src="images.url"  alt="">
                                 </div>
                             </div>
                         </div>
@@ -27,26 +27,26 @@
                                     <img src="assets/img/shop/d2.jpg" alt="">
                                 </div>
                             </div>
-                        </div>
-                        <div class="cbp-item">
+                        </div> -->
+                        <!-- <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <img src="assets/img/shop/d3.jpg" alt="">
+                                    <img src="puppy.jpg" alt="">
                                 </div>
                             </div>
                         </div> -->
                     </div>
                     <div id="js-pagination-slider">
                         <div class="cbp-pagination-item cbp-pagination-active">
-                            <img v-bind:src="vendor.images" alt="">
+                            <img v-bind:src="images.url" alt="">
                         </div>
                         <!-- <div class="cbp-pagination-item">
                             <img src="assets/img/shop/d2.jpg" alt="">
                         </div>
                         <div class="cbp-pagination-item">
                             <img src="assets/img/shop/d3.jpg" alt="">
-                        </div> -->
-                    </div>
+                        </div>
+                    </div> -->
                 </div>
                 <div class="col-md-4">
                     <div class="product-detail">
@@ -227,7 +227,41 @@ export default {
       this.vendors.push(item);
     }
   },
-  computed: {}
+  computed: {},
+  mounted: function() {
+    (function ($, window, document, undefined) {
+        'use strict';
+
+        // init cubeportfolio
+        $('#js-grid-slider-thumbnail').cubeportfolio({
+            layoutMode: 'slider',
+            drag: true,
+            auto: false,
+            autoTimeout: 5000,
+            autoPauseOnHover: true,
+            showNavigation: false,
+            showPagination: false,
+            rewindNav: true,
+            scrollByPage: true,
+            gridAdjustment: 'responsive',
+            mediaQueries: [{
+                    width: 0,
+                    cols: 1
+                }],
+            gapHorizontal: 0,
+            gapVertical: 0,
+            caption: '',
+            displayType: 'fadeIn',
+            displayTypeSpeed: 400,
+            plugins: {
+                slider: {
+                    pagination: '#js-pagination-slider',
+                    paginationClass: 'cbp-pagination-active'
+                }
+            }
+        });
+    })(jQuery, window, document);
+  }
 };
 
 </script>
