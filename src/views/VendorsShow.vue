@@ -13,14 +13,14 @@
             <div class="row">
                 <div class="col-md-6 ml-auto">
 
-                     <div v-for="vendor in vendors" id="js-grid-slider-thumbnail" class="cbp ">
+                     <<!-- div v-for="vendor in vendors" id="js-grid-slider-thumbnail" class="cbp ">
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <img v-bind:src="images.url"  alt="">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                        <!--  <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
@@ -35,11 +35,11 @@
                                 </div>
                             </div>
                         </div> -->
-                    </div>
-                    <div id="js-pagination-slider">
+                   <!--  </div> -->
+                   <!--  <div id="js-pagination-slider">
                         <div class="cbp-pagination-item cbp-pagination-active">
                             <img v-bind:src="images.url" alt="">
-                        </div>
+                        </div> -->
                         <!-- <div class="cbp-pagination-item">
                             <img src="assets/img/shop/d2.jpg" alt="">
                         </div>
