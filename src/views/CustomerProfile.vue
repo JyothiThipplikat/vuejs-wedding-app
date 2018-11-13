@@ -1,17 +1,16 @@
 <template>
   <div class="customerprofile">
-    <li class="nav-item">
-        <a href="/#/logout" class="nav-link"><i class="ion-android-lock mr-2"></i> Login</a></li>
-    </li>
-    <section id="content-region-3" class="padding-40 page-tree-bg page-tree-bg2">
+    <section> 
+    <img src="outdoor.jpg" class="space=30 page-transparent"> 
           <div class="container">
               <h3 class="page-tree-text">
-                  Shop Sidebar
+                  Select from the options below...
               </h3>
           </div>
     </section><!--page-tree end here-->
     <div class="space-70"></div>
-
+     <a href="/#/survey" class="btn theme-btn-color btn-radius btn-lg">Edit profile!</a> 
+     <div class="space-30"></div>
         <div class="container">
           <div class="row">
               <div class="col-lg-12">
@@ -35,8 +34,7 @@
           </div>
           </div>
         </div>
-        </div>             
-    <a href="/#/survey" class="btn theme-btn-color btn-radius btn-lg">Edit your profile!</a>   
+        </div>               
   </div>
 </template>
 

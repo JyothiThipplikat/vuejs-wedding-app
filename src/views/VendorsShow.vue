@@ -15,14 +15,7 @@
             <div class="row">
                 <div class="col-md-6 ml-auto">
                      <div id="js-grid-slider-thumbnail" class="cbp ">
-                       <!--  <div class="cbp-item">
-                            <div class="cbp-caption">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img v-bind:src="vendor.image_urls" alt="">
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="cbp-item">
+                        <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <img v-bind:src="vendor.image_urls" alt="">
@@ -35,7 +28,14 @@
                                     <img v-bind:src="vendor.image_urls" alt="">
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                        <div class="cbp-item">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img v-bind:src="vendor.image_urls" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="js-pagination-slider">
                         <div class="cbp-pagination-item cbp-pagination-active">

@@ -1,14 +1,17 @@
 <template>
   <div class="survey">
-    <h1>Begin your wedding planning!</h1>
+    <div class="space-30"></div>
+    <h1 align="center">Begin your wedding planning!</h1>
       <ul>
         <li class="text-danger" v-for="error in errors">{{ error }}</li>
       </ul>  
-
+ 
+      <div class="space-30"></div>
+      <h5>Select Percentage</h5>
     <div class="form-group">
-        <vue-slider v-model="percentage"></vue-slider> 
+      <vue-slider v-model="percentage"></vue-slider> 
     </div> 
-
+    <div class="space-10"></div>
     <form v-on:submit.prevent="submit()">
       <div class="form-group">
         <label for="Categories">Select Category</label>
@@ -16,17 +19,20 @@
           <option v-for="tag in tags" v-if="tag.specialty" v-bind:value="tag.id"> {{tag.name}}</option>
         </select>
       </div>  
-
-      <input type="submit" class="btn btn-primary" value="Submit">
+       <div class="space-40"></div>
+      <input type="submit" class="btn theme-btn-color-outline" value="Submit">
     </form>
 
   <div class="space-30"></div>
 
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Percentages</button>
+  <button type="button" class="btn theme-btn-color btn-radius btn-lg" data-toggle="collapse" data-target="#demo">View Percentages</button>
+
+  <a href="/#/customerprofile" class="btn theme-btn-color btn-radius btn-lg">View Profile</a>
+
   <div id="demo" class="collapse in">
     <div class="row">
       <div class="col-md-12">
-          <h4 class="heading-mini"></h4>
+        <h4 class="heading-mini"></h4>
       </div>
     </div>  
 

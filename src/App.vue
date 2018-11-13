@@ -10,6 +10,9 @@
                     <li class="nav-item">
                         <a href="/#/login" class="nav-link"><i class="ion-android-lock mr-2"></i> Login</a></li>
                     </li>
+                     <li class="nav-item">
+                    <a href="/#/logout" class="nav-link"><i class="ion-android-lock mr-2"></i> Logout</a></li>
+                    </li>
                 </ul>
             </div><!--container end-->
         </div>
@@ -143,9 +146,6 @@
     </header><!--header main end-->
 
     <div style="height:100px"></div>
-|
-        <router-link to="/logout">Logout</router-link> |
-        <router-link to="/survey">Survey</router-link> |
 
     <div class="container">
         

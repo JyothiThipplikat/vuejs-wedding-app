@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <div class="space-30"></div>
     <!-- carousel start -->
     <div id="carouselBizwrap" class="carousel carouselBizwrap slide" data-ride="carousel">
         <div class="carousel-overlay"></div>
@@ -71,7 +72,7 @@
                         <i class="ion-ios-people-outline"></i>
                         <h4>About us...</h4>
                         <p>
-                            We are commited to giving you the upmost quality for helping you plan your perfect wedding.
+                            We are commited to giving you the upmost quality for helping you plan your wedding.
                         </p>
                     </div>
                 </div><!--services box-->
