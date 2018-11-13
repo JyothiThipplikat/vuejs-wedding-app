@@ -1,9 +1,10 @@
 <template>
   <div class="vendors-index">
-        <section id="content-region-3" class="padding-40 page-tree-bg page-tree-bg2 page-transparent">
+      <section>
+        <img src="table.jpg" class="space=30 page-transparent"> 
+          
             <div class="container">
                 <h3 class="page-tree-text">
-                    Shop Default
                 </h3>
             </div>
         </section><!--page-tree end here-->

@@ -1,6 +1,8 @@
 <template>
   <div class="customerprofile">
-
+    <li class="nav-item">
+        <a href="/#/logout" class="nav-link"><i class="ion-android-lock mr-2"></i> Login</a></li>
+    </li>
     <section id="content-region-3" class="padding-40 page-tree-bg page-tree-bg2">
           <div class="container">
               <h3 class="page-tree-text">

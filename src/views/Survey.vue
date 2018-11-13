@@ -6,12 +6,9 @@
       </ul>  
 
     <div class="form-group">
-      <div v-for="priority in priorities">
-        <h1>{{ priority.tag.name }}</h1>
-        <vue-slider v-model="percentage"></vue-slider>
-      </div>
-    
+        <vue-slider v-model="percentage"></vue-slider> 
     </div> 
+
     <form v-on:submit.prevent="submit()">
       <div class="form-group">
         <label for="Categories">Select Category</label>
@@ -23,8 +20,30 @@
       <input type="submit" class="btn btn-primary" value="Submit">
     </form>
 
+  <div class="space-30"></div>
+
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Percentages</button>
+  <div id="demo" class="collapse in">
+    <div class="row">
+      <div class="col-md-12">
+          <h4 class="heading-mini"></h4>
+      </div>
+    </div>  
+
+    <div class="row">
+      <div v-for="priority in priorities" class="col-md-3 col-sm-6  margin-btm-20">
+        <div class="pricing-wrapper">
+          <div class="pricing-head">
+              <h3>{{ priority.tag.name }}</h3>
+          </div>
+          <div class="pricing-rate">
+             <h3>{{priority.formatted.percentage}}<md>%</md></h3>
+          </div>
+        </div><!--pricing wrapper-->
+      </div><!--pricing col end-->
+    </div>
+    </div>
   </div>
-  
 </template>
 
 <style>
@@ -33,6 +52,7 @@
 
 <script>
 var axios = require('axios');
+
 import vueSlider from 'vue-slider-component';
 
 export default {
@@ -42,7 +62,14 @@ export default {
       percentage: "",
       tagId: 0,
       errors: [],
-      priorities: []
+      priorities: [
+        {
+          tag: {
+            name: ""
+          },
+          formatted: {}
+        }
+      ]
     };
   },
   created: function() {
@@ -51,14 +78,10 @@ export default {
     .then(response => {
       this.tags = response.data;
     });
-
     axios
     .get("http://localhost:3000/api/priorities")
     .then(response => {
       this.priorities = response.data;
-      this.priorities.forEach(priority => {
-        this.changedPriorities[priority.tag.name] = false;
-      });
     });
   },
   methods: {
@@ -67,7 +90,6 @@ export default {
         percentage: this.percentage,
         tag_id: this.tagId
       };
-
       axios
       .post("http://localhost:3000/api/change_priorities", params)
       .then(response => {
@@ -84,6 +106,4 @@ export default {
   },
   computed: {}
 };
-
 </script>
-    

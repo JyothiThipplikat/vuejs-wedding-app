@@ -24,10 +24,10 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="active dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Home</a> 
+                      <!--   <li class="active dropdown nav-item">
+                             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Home</a> 
                             <ul class="dropdown-menu">
-                                <li><a href="index.html" class="dropdown-item">Home - Default</a></li>
+                                <li><a href="index.html" >Home </a></li>
                                 <li><a href="home-master.html" class="dropdown-item">Home - Master Slider</a></li>
                                 <li><a href="home-animation.html" class="dropdown-item">Home - Animations</a></li>
                                 <li><a href="home-carousel.html" class="dropdown-item">Home Carousel</a></li>
@@ -47,8 +47,8 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="dropdown nav-item">
+                        </li> -->
+                     <!--    <li class="dropdown nav-item">
                             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Portfolio</a>
                             <ul class="dropdown-menu">
                                 <li><a href="portfolio.html" class="dropdown-item">Portfolio 3 col</a></li>
@@ -57,8 +57,8 @@
                                 <li><a href="portfolio-full-boxed.html" class="dropdown-item">Full width boxed</a></li>                            
                                 <li><a href="portfolio-single.html" class="dropdown-item">Portfolio Single</a></li>
                             </ul>
-                        </li>
-                        <li class=" dropdown nav-item">
+                        </li> -->
+                        <!-- <li class=" dropdown nav-item">
                             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Blog</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="blog-full.html">Blog Full width</a></li>
@@ -66,8 +66,8 @@
                                 <li><a class="dropdown-item" href="blog-masonry.html">Blog Masonry</a></li>
                                 <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
                             </ul>
-                        </li>
-                        <!--mega menu-->
+                        </li> -->
+                        <!--mega menu
                         <li class="dropdown dropdown-fw nav-item">
                             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">More  <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
@@ -112,15 +112,15 @@
                                     </div>
                                 </li>
                             </ul>
-                        </li> 
+                        </li>  -->
                         <li class=" dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Shop</a>
-                            <ul class="dropdown-menu dropdown-menu-right">
+                            <a href="#/vendors" class="nav-link">Shop Services</a>
+                           <!--  <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a class="dropdown-item" href="shop-default.html">Shop 3 columns</a></li><li><a href="shop-sidebar.html" class="dropdown-item">Shop Sidebar</a></li>
                                 <li><a class="dropdown-item" href="product-detail.html">Product Detail</a></li>                              
                                 <li><a class="dropdown-item" href="shop-cart.html">Cart</a></li>
                                 <li><a class="dropdown-item" href="shop-checkout.html">Checkout</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                     </ul>
                 </div>
@@ -143,19 +143,20 @@
     </header><!--header main end-->
 
     <div style="height:100px"></div>
-
-        <router-link to="/">Home</router-link> |
+|
         <router-link to="/logout">Logout</router-link> |
         <router-link to="/survey">Survey</router-link> |
-        <router-link to="/vendors">All Vendors</router-link> |
-    <router-view/>
+
+    <div class="container">
+        
+        <router-view/>
+    </div>    
 
     <div style="height:100px"></div>
    
     <div class="cta-bg">
             <div class="container text-center">
                 <h3>Making weddings simple to plan
-                   <!--  <a href="#" class="btn btn-lg btn-white btn-radius">Purchase Now</a> -->
                 </h3>
             </div>
         </div>
@@ -171,4 +172,5 @@ color: black;
 span{
 color: #32D2BA;
 }
+
 </style>
